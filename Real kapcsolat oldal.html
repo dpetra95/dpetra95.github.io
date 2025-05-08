@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="hu">
+
+<nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
 <head>
   <meta charset="UTF-8">
   <title>Kapcsolatfelvétel</title>
   <link rel="stylesheet" href="Style.css"> <!-- Link to external CSS -->
 </head>
 <body>
-  <h6>Lépj velem kapcsolatba!</h6>
-  <h8>Bármilyen kérdésed van, vagy csak szeretnél kapcsolatba lépni velem, írj bátran! Töltsd ki az alábbi űrlapot, és amint tudok, válaszolok. Várom az üzeneted!</h8>
+  <h6>Feel free to contact me</h6>
+  <h8>If you have any questions or just want to get in touch, feel free to write! Fill out the form below, and I’ll get back to you as soon as I can.</h8>
+  
 
   <form action="/submit" method="post">
-    <label for="lastname">Vezetéknév:</label><br>
+    <label for="lastname">Last name:</label><br>
     <input type="text" id="lastname" name="lastname" required><br><br>
 
-    <label for="firstname">Keresztnév:</label><br>
+    <label for="firstname">First name:</label><br>
     <input type="text" id="firstname" name="firstname" required><br><br>
 
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" required><br><br>
 
-    <label for="phone">Telefonszám:</label><br>
+    <label for="phone">Mobile:</label><br>
     <input type="tel" id="phone" name="phone"><br><br>
 
-    <button type="submit">Küldés</button>
+    <label for="Text">Text:</label><br>
+    <input type="text" id="text" name="text"><br><br>
+
+    
+
+    <button type="submit">Send</button>
   </form>
 </body>
 </html>

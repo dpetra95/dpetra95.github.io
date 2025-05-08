@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Real kapcsolat oldal.html">Contact</a></li>
+        </ul>
+      </nav>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="Style.css"> <!-- Link to external CSS -->
 </head>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-    </ul>
-</nav>
+
 <body>
     <header>
         <h3>Van Market app</h3>
@@ -19,22 +21,93 @@
  
 
     <main>
-        <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu pharetra, viverra orci pretium, elementum eros. Ut non metus vitae nulla convallis venenatis et non eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu pharetra, viverra orci pretium, elementum eros. Ut non metus vitae nulla convallis venenatis et non eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu pharetra, viverra orci pretium, elementum eros. Ut non metus vitae nulla convallis venenatis et non eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu pharetra, viverra orci pretium, elementum eros. Ut non metus vitae nulla convallis venenatis et non eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu pharetra, viverra orci pretium, elementum eros. Ut non metus vitae nulla convallis venenatis et non eros. </p>
+        <h1>The project was part of a university course focused on assisting people in rural areas. I developed an app to help rural pensioners earn extra income by enabling them to easily sell their products using mobile vans.
+
+            During the project, I conducted field research, including interviews and surveys, and created the user flow, 
+            wireframes, and user tests.  
+            
+            I also designed the app’s logo and illustrations.</h1>
     </section>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Horizontal Gallery</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+        /* You can also put this in style.css */
+        body {
+          font-family: sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .horizontal-gallery {
+          padding: 40px 20px;
+          overflow: hidden;
+        }
+    
+        .horizontal-gallery h2 {
+          margin-bottom: 20px;
+          font-size: 2rem;
+          text-align: center;
+          color: #333;
+        }
+    
+        .scroll-container {
+          display: flex;
+          overflow-x: auto;
+          gap: 20px;
+          padding-bottom: 10px;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch;
+        }
+    
+        .scroll-container::-webkit-scrollbar {
+          height: 8px;
+        }
+    
+        .scroll-container::-webkit-scrollbar-thumb {
+          background-color: #aaa;
+          border-radius: 4px;
+        }
+    
+        .scroll-container a {
+          flex: 0 0 auto;
+          scroll-snap-align: start;
+          border-radius: 10px;
+          transition: transform 0.3s;
+        }
+    
+        .scroll-container a:hover {
+          transform: scale(1.05);
+        }
+    
+        .scroll-container img {
+          width: 300px;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 10px;
+          display: block;
+        }
+      </style>
+    </head>
     <body>
-        <h1>My Image</h1>
-        <!-- Image tag -->
-        <img src="Codingclass.png" alt="A project about last yeare">
-        <li><a href="Codingclass.png">form2</a></li>
-      
-    </section>
-
-    <body>
-        <h1>My Image</h1>
-        <!-- Image tag -->
-        <img src="Codingclass.png" alt="A project about last yeare">
-        <li><a href="Codingclass.png">form2</a></li>
+    
+      <section class="horizontal-gallery">
+        <h2>Project Gallery</h2>
+        <div class="scroll-container">
+          <a href="van-market-app.html"><img src="pic1.png" alt="Van Market App"></a>
+          <a href="project2.html"><img src="kep1.png" alt="404 Page Design"></a>
+          <a href="project3.html"><img src="kep2.png" alt="Mercedes ZenWheels"></a>
+          <a href="project4.html"><img src="kep3.png" alt="Tangible Tablecloth"></a>
+        </div>
+      </section>
+    
+    </body>
+    </html>
+    
       
     
     </main>
