@@ -6,11 +6,6 @@ h1 {
     color: rgb(39, 45, 38);
 }
 
-{
-  margin: 40;
-  padding: 20;
-  box-sizing: border-box;
-}
 
 body {
     background-color: rgb(254, 255, 244);
@@ -175,7 +170,6 @@ input[type="text"],
 
   
 
-    <style>
     table {
         border-collapse: collapse; /* Ensures borders don’t double */
         width: 50%;
@@ -186,7 +180,6 @@ input[type="text"],
         text-align: left;
     }
     
-</style>
 
 nav {
   position: fixed;
