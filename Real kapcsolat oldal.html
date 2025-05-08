@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Kapcsolatfelvétel</title>
+  <link rel="stylesheet" href="Style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <h6>Lépj velem kapcsolatba!</h6>
+  <h8>Bármilyen kérdésed van, vagy csak szeretnél kapcsolatba lépni velem, írj bátran! Töltsd ki az alábbi űrlapot, és amint tudok, válaszolok. Várom az üzeneted!</h8>
+
+  <form action="/submit" method="post">
+    <label for="lastname">Vezetéknév:</label><br>
+    <input type="text" id="lastname" name="lastname" required><br><br>
+
+    <label for="firstname">Keresztnév:</label><br>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Telefonszám:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <button type="submit">Küldés</button>
+  </form>
+</body>
+</html>
