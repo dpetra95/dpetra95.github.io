@@ -216,99 +216,88 @@ input[type="text"],
   position: relative;
 }
 
-/* Hover effect for menu items */
-.menu a:hover {
-  color: #394730;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Active link styles */
-.menu a.active {
-  color: rgb(165, 174, 158);
-  background-color: #889b82;
-  font-weight: 400;
-}
-
-.menu a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .menu ul {
-    flex-direction: column;
-    gap:
-
-
-/* Base page styling */
-body {
-font-family: 'Helvetica Neue', sans-serif;
-margin: 0;
-padding: 0;
-background-color: #fafafa;
-color: #333;
-}
-
 /* Gallery section */
 .horizontal-gallery {
-padding: 40px 80px;
-max-width: 1400px;
-margin: 0 auto;
+  padding: 60px 80px; /* Increased padding for wider layout */
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
+/* Gallery title */
 .horizontal-gallery h2 {
-text-align: center;
-font-size: 2.5rem;
-margin-bottom: 40px;
-color: #5e6753;
+  text-align: center;
+  font-size: 3rem; /* Larger title */
+  margin-bottom: 60px;
+  color: #5e6753;
 }
 
 /* Scrollable container */
 .scroll-container {
-display: flex;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-gap: 40px;
-padding: 10px 0;
--webkit-overflow-scrolling: touch;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px; /* Increased gap for spacious look */
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Remove default scrollbars (optional) */
 .scroll-container::-webkit-scrollbar {
-height: 8px;
+  height: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-background-color: #4b5635;
-border-radius: 4px;
+  background-color: #4b5635;
+  border-radius: 4px;
 }
 
 /* Gallery item links */
 .scroll-container a {
-flex: 0 0 auto;
-scroll-snap-align: start;
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(36, 47, 32, 0.1);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-text-decoration: none;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(36, 47, 32, 0.15); /* Larger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
 /* Hover effect */
 .scroll-container a:hover {
-transform: scale(1.05);
-box-shadow: 0 6px 16px rgba(51, 103, 44, 0.15);
+  transform: scale(1.1); /* Larger scale on hover */
+  box-shadow: 0 6px 30px rgba(51, 103, 44, 0.25); /* Enhanced hover effect */
 }
 
 /* Image styling */
 .scroll-container img {
-display: block;
-width: 700px;
-height: 600px;
-object-fit: cover;
-border-radius: 12px;
+  display: block;
+  width: 100%; /* Ensure full width for better responsiveness */
+  max-width: 1600px; /* Larger max-width for bigger images */
+  height: 900px; /* Fixed height for bigger images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 12px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .horizontal-gallery h2 {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .scroll-container {
+    gap: 20px; /* Less gap on mobile */
+  }
+
+  .scroll-container img {
+    max-width: 100%; /* Full width images on mobile */
+    height: 500px; /* Smaller height on mobile */
+  }
+
+  .scroll-container a {
+    padding: 10px; /* Smaller padding for mobile */
+  }
+}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
