@@ -183,8 +183,8 @@ input[type="text"],
 
 /* New Menu Style */
 .menu {
-  padding: 8px 20px; /* Reduced vertical padding to make the menu vertically narrower */
-  background-color: #cdd6c4;
+  padding: 8px 10px; /* Reduced vertical padding to make the menu vertically narrower */
+  background-color: #abb2a3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
   border-radius: 12px;
@@ -209,7 +209,7 @@ input[type="text"],
   color: #000000;
   font-size: 20px;
   font-weight: 400;
-  padding: 12px 12px;
+  padding: 2px 2px;
   border-radius: 0px;
   transition: all 0.3s ease;
   display: block;
@@ -305,7 +305,7 @@ input[type="text"],
 
 
 .menu {
-padding: 20px 20px;
+padding: 0px 0px;
 font-family: 'Poppins', sans-serif;
 }
 
