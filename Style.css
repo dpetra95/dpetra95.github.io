@@ -172,7 +172,7 @@ input[type="text"],
 
   table {
       border-collapse: collapse; /* Ensures borders don’t double */
-      width: 50%;
+      width: 100%;
   }
   th, td {
       border: 1px solid rgb(208, 215, 188);
@@ -181,74 +181,66 @@ input[type="text"],
   }
   
 
-nav {
-position: fixed;
-top: 0;
-right: 0;
-color: white;
-padding: 15px 20px;
-z-index: 10;
-text-align: center;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.8);
-display: flex;
-justify-content: flex-end;
-align-items: baseline;
-font-family: "Arapey", italic;
-}
-
-.nav-container {
-display: flex;
-align-items: center;
-width: 100%;
-justify-content: flex-end;
-}
-
-/* Nav Links */
-.nav-links {
-list-style: none;
-display: flex;
-align-self: center;
-}
-
-.nav-links li {
-margin: 15px;
-}
-
-.nav-links a {
-color: white;
-text-decoration: none;
-font-size: 40px;
-position: relative;
-transition: color 0.3s ease-in-out;
-}
-
-.intro-text {
-padding: 15px 0;
-font-size: 24px;
-line-height: 2rem;
+/* New Menu Style */
+.menu {
+  padding: 8px 20px; /* Reduced vertical padding to make the menu vertically narrower */
+  background-color: #cdd6c4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 12px;
+  margin-top: 10px;
 }
 
 .menu ul {
-list-style: none;
-padding: 24;
-margin: 24;
-display: flex;
-gap: 32px;
-background-color: #f0f1ea;
-padding: 20px 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  gap: 40px;
 }
 
-.menu ul li a {
-text-decoration: none;
-color: #000000;
-font-weight: bold;
-transition: color 0.3s;
+.menu li {
+  display: inline-block;
 }
 
-.menu ul li a:hover {
-color: #445f44;
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 12px 12px;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+  display: block;
+  position: relative;
 }
+
+/* Hover effect for menu items */
+.menu a:hover {
+  color: #394730;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Active link styles */
+.menu a.active {
+  color: rgb(165, 174, 158);
+  background-color: #889b82;
+  font-weight: 400;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap:
+
 
 /* Base page styling */
 body {
